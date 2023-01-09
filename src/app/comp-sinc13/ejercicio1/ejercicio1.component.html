@@ -1,3 +1,7 @@
 <div>
-  <input type="text" [(ngModel)]="valor">
+  <label for="mensaje">Palabra: </label>
+  <input type="text" [(ngModel)]="valor" id="mensaje">
+</div>
+<div>
+  <p>Resultado: {{valor | uppercase}}</p>
 </div>
