@@ -3,11 +3,11 @@
   <label for="moneda">Valor: </label>
   <input type="number" [(ngModel)]="valor" class="p-1 my-3 rounded-md">
   <br>
-  <select id="tipo" [(ngModel)]="tipoModena">
+  <select id="tipo" [(ngModel)]="tipoModena" class="p-1 rounded-md">
     <option value="usd">USD</option>
     <option value="eur">EUR</option>
   </select>
 </div>
 <div>
-<p> {{valor | typeMoney:tipoModena}} </p>
+<p class="text-2xl"> {{valor | typeMoney:tipoModena}} </p>
 </div>
