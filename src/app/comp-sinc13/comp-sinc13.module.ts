@@ -1,3 +1,4 @@
+import { TipeMoneyPipe } from './../pipes/tipe-money.pipe';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -11,11 +12,12 @@ import { AsincronoComponent } from './asincrono/asincrono.component';
   declarations: [
     Ejercicio1Component,
     Ejercicio2Component,
-    AsincronoComponent
+    AsincronoComponent,
+    TipeMoneyPipe
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
   ],
   exports: [
     Ejercicio1Component,

@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ejercicio2.component.scss']
 })
 export class Ejercicio2Component implements OnInit {
-
+  valor:number=0;
+  tipoModena:string='usd'
   constructor() { }
 
   ngOnInit(): void {
