@@ -8,7 +8,12 @@ export class TipeMoneyPipe implements PipeTransform {
   transform(value: number, tipo: string): string {
     if(tipo=='usd'){
       return '$ '+value
-    }else return '€ '+value
+    }else if(tipo=='eur'){
+      return '€ '+value
+    } 
+    else{
+      return ''
+    }
   }
 
 }

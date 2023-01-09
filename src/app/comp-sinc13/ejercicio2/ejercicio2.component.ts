@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ejercicio2Component implements OnInit {
   valor:number=0;
-  tipoModena:string='usd'
+  tipoMoneda:string=''
   constructor() { }
 
   ngOnInit(): void {

@@ -1,6 +1,7 @@
 <div>
-  <label for="mensaje">Palabra: </label>
-  <input type="text" class="p-1 rounded-md " [(ngModel)]="valor" id="mensaje">
+  <h2 class="text-4xl my-3">Ejercicio pipe Mayusculas</h2>
+  <label for="mensaje" class="text-2xl">Palabra: </label>
+  <input type="text" class="p-1 rounded-md mb-4 text-2xl bg-transparent text-white border-solid border-2 border-orange-200" [(ngModel)]="valor" id="mensaje">
 </div>
 <div>
   <p>Resultado: {{valor | uppercase}}</p>

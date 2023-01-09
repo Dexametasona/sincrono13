@@ -1,13 +1,13 @@
 <div class="my-3">
-  <h2>Currency Pipes</h2>
-  <label for="moneda">Valor: </label>
-  <input type="number" [(ngModel)]="valor" class="p-1 my-3 rounded-md">
+  <h2 class="text-4xl mb-5">Tipo de moneda</h2>
+  <label for="moneda" class="text-2xl">Valor: </label>
+  <input type="number" [(ngModel)]="valor" class="p-1 rounded-md mb-4 text-2xl bg-transparent text-white border-solid border-2 border-orange-200">
   <br>
-  <select id="tipo" [(ngModel)]="tipoModena" class="p-1 rounded-md">
-    <option value="usd">USD</option>
-    <option value="eur">EUR</option>
+  <select id="tipo" [(ngModel)]="tipoMoneda" class="p-1 rounded-md">
+    <option value="usd" class="">USD</option>
+    <option value="eur" class="">EUR</option>
   </select>
 </div>
 <div>
-<p class="text-2xl"> {{valor | typeMoney:tipoModena}} </p>
+<p class="text-2xl"> {{valor | typeMoney:tipoMoneda}} </p>
 </div>
